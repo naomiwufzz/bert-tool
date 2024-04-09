@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from transformers import BertConfig, BertModel, BertTokenizer
 from transformers import AutoTokenizer
-model_file = "bert-base-chinese"
+model_file = "./hugging_face_model/bert-base-chinese"
 tokenizer = BertTokenizer.from_pretrained(model_file)
 tokenizer = AutoTokenizer.from_pretrained(model_file)
 bert_model = BertModel.from_pretrained(model_file)
